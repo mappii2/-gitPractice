@@ -1,0 +1,149 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(../img/NERV.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: 250px;
+  background-attachment: fixed;
+  background-position: center left;
+  background-color: black;
+  width: 1200px;
+  color: cornsilk;
+  margin: 0 auto;
+}
+
+/* header--------------------- */
+h1 {
+  color: dodgerblue;
+  background-color: black;
+  width: 790px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header img {
+  width: 800px;
+  padding: 10px 200px;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+nav ul{
+  display: table;
+  margin: 0 auto;
+  padding: 0 ;
+  width: 80%;
+  text-align: center;
+  background-color: black;
+}
+
+nav li{
+  display: table-cell;
+  min-width: 50px;
+}
+
+nav a{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: rgb(206, 50, 50);
+  padding-bottom: 5px;
+}
+
+nav li.current{
+  border-bottom: 3px solid #6b1ba0;
+}
+
+nav li:hover{
+  color: #E7DA66;
+  border-bottom: 3px solid #519618;
+  background-color: rgb(46, 44, 44);
+}
+/* header--------------------- */
+
+/* wrapper--------------------- */
+#wrapper {
+  background-color: black;
+  padding: 10px;
+}
+#wrapper .comment1 {
+  text-align: center;
+}
+
+#charactor h3 {
+  color: rgb(34, 184, 84);
+  padding-left: 100px;
+}
+
+.comment {
+  width: 1000px;
+}
+
+#shokai {
+  list-style: none;
+  padding-left: 120px;
+}
+
+#shokai li {
+  color: darkcyan;
+  width: 1000px;
+}
+
+#shokai li:hover {
+  color: skyblue;
+  border-bottom: 1px solid blue;
+}
+/* wrapper--------------------- */
+
+/* footer--------------------- */
+.chara-phot {
+  width: 500px;
+}
+
+#photoSt {
+  display: flex ;
+  overflow: hidden;
+  
+}
+
+.photstudio {
+  width: 1200px;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+#photoSt img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+#photoSt img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+#footer {
+  width: 1200px;
+  margin-top: 50px;
+}
+
+#line p{
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+}
+/* footer--------------------- */
